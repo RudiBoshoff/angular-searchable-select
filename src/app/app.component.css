@@ -1,0 +1,17 @@
+p {
+  font-family: Lato;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+label {
+  margin-bottom: 0.3em;
+}
+
+input {
+  padding: 0.5em;
+}
