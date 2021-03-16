@@ -1,9 +1,18 @@
 <div>
   <label>Select Country</label>
-  <input type="text" list="itemList" name="item" [(ngModel)]='currentItem' (change)="onItemChanged(currentItem)" placeholder="Select item"/>
+  <input
+    type="text"
+    list="itemList"
+    name="item"
+    [(ngModel)]='currentItem'
+    (change)="onItemChanged(currentItem)"
+    placeholder="Select item"/>
   <datalist id="itemList">
     <select>
-          <option *ngFor="let item of items" [value]="item"></option>
-        </select>
+      <option 
+        *ngFor="let item of items" 
+        [value]="item">
+      </option>
+    </select>
   </datalist>
 </div>

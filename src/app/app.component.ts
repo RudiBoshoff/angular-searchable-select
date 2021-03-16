@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
   currentItem: string = "";
-  selectedItem: Item;
+  selectedItem: string;
   items = ["one", "two", "three"];
 
   onItemChanged(item) {
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     this.selectedItem = this.getSelectedItem(item);
   }
 
-  getSelectedItem(selectedItem: string): Item {
+  getSelectedItem(selectedItem: string) {
     return this.items.find(item => item === selectedItem);
   }
 }
